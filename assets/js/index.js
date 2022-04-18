@@ -42,7 +42,7 @@ $(document).ready(() => {
 
 });
 
-$("#music").on("ended", () => {
+$("jankplaya").on("ended", () => {
     if(songIndex + 1 < songArrLength) {
         songIndex++;
         $(".song").text(`${songs[songIndex]} (${songIndex + 1}/${songArrLength})`);
