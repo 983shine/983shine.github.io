@@ -42,6 +42,14 @@ $(document).ready(() => {
 
 });
 
+$("#music").on("ended", () => {
+    if(songIndex + 1 < songArrLength) {
+        songIndex++;
+        $(".song").text(`${songs[songIndex]} (${songIndex + 1}/${songArrLength})`);
+        $(".player").html(`<audio id="jankplaya" controls autoplay><source src="assets/music/${songIndex}.mp3" type="audio/mpeg"></audio>`);
+    }
+});
+
 $(document).click(() => {
     if(!interacted) {
         document.getElementById("jankplaya").play(); // yeah vanilla at this point idk why i even used jquery in this at all
