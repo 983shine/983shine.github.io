@@ -39,7 +39,8 @@
   
 
 * {
-    text-shadow: 1px 1px 0px rgb(8 230 255), -1px -1px 0px rgb(255 0 0);    font-smooth: never;
+    text-shadow: 1px 1px 0px rgb(8 230 255 / 74%), -1px -1px 0px rgb(255 0 0 / 59%);
+    font-smooth: never;
     -webkit-font-smoothing : none;
     user-select: none; /* supported by Chrome and Opera */
     -webkit-user-select: none; /* Safari */
