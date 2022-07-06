@@ -2,7 +2,7 @@ const songs = [
     "glaive - i wish i could but my mom would kill me",
     "glaive - a minor 126 bpm",
     "glaive - bird",
-    "glaive - crynomore"
+    "glaive - crynomore",
     "glaive - fear of god and the catholic church",
     "glaive - fun time to be uhh",
     "glaive - dont bring this up again",
