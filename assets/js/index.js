@@ -1,11 +1,22 @@
 const songs = [
-    "bladee - obedient",
-    "glaive - sick",
-    "blair witch - mahshallah",
-    "yung lean - summertime blood",
-    "thaiboy digital - legendary member",
-    "ecco2k - western union",
-    "ecco2k - calcium"
+    "glaive - i wish i could but my mom would kill me",
+    "glaive - a minor 126 bpm",
+    "glaive - bird",
+    "glaive - crynomore"
+    "glaive - fear of god and the catholic church",
+    "glaive - fun time to be uhh",
+    "glaive - dont bring this up again",
+    "glaive - function",
+    "glaive - grow up",
+    "glaive - unsaid (demo)",
+    "glaive - wasting away",
+    "glaive - marie antoinette",
+    "glaive - note to self: nothing good happens in florida",
+    "glaive - or are you drunk, i can never tell",
+    "glaive - pardee urgent care",
+    "glaive - prick (ft. midwxst)",
+    "glaive - the 6 most prescribed adhd medications",
+    "glaive - three wheels and it still drives"
 ];
 
 let songIndex;
