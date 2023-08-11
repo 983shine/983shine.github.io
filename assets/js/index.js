@@ -1,4 +1,5 @@
 const songs = [
+    "garfield",
     "glaive - i wish i could but my mom would kill me",
     "glaive - a minor 126 bpm",
     "glaive - bird",
@@ -30,7 +31,7 @@ songIndex = Math.floor(Math.random() * songArrLength);
 
 $(document).ready(() => {
     $(".song").text(`${songs[songIndex]} (${songIndex + 1}/${songArrLength})`);
-    $(".player").html(`<audio id="jankplaya" controls autoplay><source src="assets/music/${songIndex}.mp3" type="audio/mpeg"></audio>`);
+    $(".player").html(`<audio id="jankplaya" controls autoplay><source src="assets/music/${songIndex}.wav" type="audio/mpeg"></audio>`);
 
 
     const titles = [
