@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+section {
+    padding: 90px;
+}
+
+section.isdark {
+    background-color: #0082ff;
+}
+
+section.introductory
+.jumbotron {
+    background-color: transparent;
+    border-radius: 0 !important;
+}
+
+section.statistics
+.col-md-4.stat {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+section.statistics .card {
+    line-height: 5px;
+    color: rgba(240,250,255,.8) !important;
+}
+
+section.statistics i {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section.statistics p, i {
+    font-weight: bold;
+    /* color: rgba(240,250,255,.9) !important; */
+}
+
+section.statistics .card p:after {
+    content: '\A';
+    white-space: pre;
+}
+
+section.features i {
+    line-height: 1.5em;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+section.servers .card {
+    line-height: 5px;
+    margin-top: 25px;
+    padding: 10px;
+}

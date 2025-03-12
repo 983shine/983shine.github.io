@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+
+html, body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.navbar-dark
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-dark
+.nav-item
+.nav-link {
+    color: rgba(240,250,255,.9) !important;
+}
+
+.navbar-dark
+.nav-item:hover
+.nav-link:hover {
+    color: rgba(240,250,255,1) !important;
+}
+
+.centered {
+    text-align: center;
+}
+
+.isdark h1,
+.isdark h2,
+.isdark h3 {
+    font-weight: 700;
+    color: #f0faff;
+}
+
+.isdark p,
+.isdark i,
+.isdark h4,
+.isdark h5,
+.isdark h6 {
+    color: rgba(240,250,255,.9);
+}
+
+.islight h1,
+.islight h2,
+.islight h3 {
+    font-weight: 700;
+    color: #0082ff;
+}
+
+.islight p,
+.islight i,
+.islight h4,
+.islight h5,
+.islight h6 {
+    /* color: rgba(0,0,0,.9); */
+}
+
+.islight .card {
+    background: #0082ff;
+}
+
+.islight .card h4, h5, h6 {
+    font-weight: 700;
+    color: rgba(240,250,255,0.9) !important;
+}
+
+.islight .card p, i  {
+    color: rgba(240,250,255,.8) !important;
+}
+

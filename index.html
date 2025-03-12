@@ -1,44 +1,208 @@
 <!DOCTYPE html>
-<html oncontextmenu="return false">
-    <head>
-        <title>❤️</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="assets/js/index.js"></script>
-    </head>
-    <body>
-        <div class="player">
+<html>
+  <head>
+    <title><%=title%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./global.css">
+    <link rel="stylesheet" type="text/css" href="./home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        </div>
-        <div class="center">
-            <div class="container">
-                <pre><h3>       
-░██████╗██╗░░██╗██╗███╗░░██╗███████╗
-██╔════╝██║░░██║██║████╗░██║██╔════╝
-╚█████╗░███████║██║██╔██╗██║█████╗░░
-░╚═══██╗██╔══██║██║██║╚████║██╔══╝░░
-██████╔╝██║░░██║██║██║░╚███║███████╗
-╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚══════╝
-                </h3></pre>
-                <div class="links-container">
-                    <a href="https://twitter.com/983shine/"><h3><i class="fa-brands fa-twitter"></i>twitter</h3></a>
-                    <a href="https://github.com/983shine/"><h3><i class="fa-brands fa-github"></i>github</h3></a>
-                    <a href=""><h3><i class="fa-brands fa-steam"></i>steam</h3></a>
-                    <a href="https://discord.gg/fBCQNCt5"><h3><i class="fa-brands fa-discord"></i>discord</h3></a>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-* navbar-dark" style="background-color: #0082ff;">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/logo-sm.png" alt="gmod.cafe"></img></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNavDropdown" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Forums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bans</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="introductory isdark">
+    <div class="jumbotron centered">
+      <div class="container">
+        <h1>Bringing a better roleplay experience for the masses.</h1>
+        <p>gmod.cafe was founded in 2019 with the sole goal of bringing a better roleplaying experience to the general public. Long gone are the days of the copy pasted, trash DarkRP servers that modify core files to change their name. This is a new era, an era with custom content and good shit.</p>
+      </div>
+    </div>
+  </section>
+  <section class="statistics islight">
+    <div class="container">
+      <h1>Statistics</h1>
+      <div class="row">
+        <div class="col-md-4 stat">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="material-icons">insert_chart</i>
                 </div>
-                <div class="now-playing">
-                    <h3>
-                        now playing: <span class="song"></span>
-                    </h3>
-                    <h3>
-                        <span class="back" onclick="back()"><i class="fa-solid fa-backward-step"></i></span>
-                        <span class="pause" onclick="change()"><i class="fa-solid fa-play "></i></span>
-                        <span class="forward" onclick="forward()"><i class="fa-solid fa-forward-step"></i></span>
-                    </h3>
+                <div class="col-xs-9">
+                  <p>Players This Month</p>
+                  <span class="value"></span>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </body>
+        <div class="col-md-4 stat">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="material-icons">calendar_today</i>
+                </div>
+                <div class="col-xs-9">
+                  <p>Players This Year</p>
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 stat">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="material-icons">tag_faces</i>
+                </div>
+                <div class="col-xs-9">
+                  <p>Players Total</p>
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 stat">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="material-icons">router</i>
+                </div>
+                <div class="col-xs-9">
+                  <p>Players Online</p>
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 stat">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="material-icons">verified_user</i>
+                </div>
+                <div class="col-xs-9">
+                  <p>Total Staff</p>
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 stat">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="material-icons">access_time</i>
+                </div>
+                <div class="col-xs-9">
+                  <p>Total Time Played</p>
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding-bottom: 22px;"></div>
+  </section>
+  <section class="features isdark">
+    <div class="container">
+      <h1>Features</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>
+            <i class="material-icons">build</i>
+            Configuration
+          </h2>
+          <p>Our servers are configured from the ground up to ensure the most performance our users. We're not like your average DarkRP server with 60,000,000 addons to download.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>
+            <i class="material-icons">build</i>
+            Hardware
+          </h2>
+          <p>Our servers are managed and audited by owners of communities that were previously booming. We've been in the game for a while, our performance is top of the line.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>
+            <i class="material-icons">build</i>
+            Experience
+          </h2>
+          <p class="isdark">Our servers files are incredibly light. This allows us to provide lightning fast loading times to our you so that you don't have to waste your time that could be spent playing.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>
+            <i class="material-icons">build</i>
+            Gay People
+          </h2>
+          <p class="isdark">Our servers are managed and audited by owners of communities that were previously booming. We've been in the game for a while, our performance is top of the line.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>
+            <i class="material-icons">build</i>
+            Wagwans
+          </h2>
+          <p>Our servers files are incredibly light. This allows us to provide lightning fast loading times to our you so that you don't have to waste your time that could be spent playing.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>
+            <i class="material-icons isdark">build</i>
+            Dumb Hawaiians
+          </h2>
+          <p>Our servers files are incredibly light. This allows us to provide lightning fast loading times to our you so that you don't have to waste your time that could be spent playing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="servers islight">
+    <div class="container">
+      <h1>Servers</h1>
+      <h4>Here are our servers, some of the information may be inaccurate.</h4>
+
+      <div class="card">
+        <div class="card-body">
+          <h4></h4>
+          <p>IP: </p>
+          <p>Map:</p>
+          <p>Players: </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
